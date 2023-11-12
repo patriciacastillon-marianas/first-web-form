@@ -6,6 +6,31 @@
     <title>First Web Form</title>
 </head>
 <body>
-    
+    <h1>My First Web Form</h1>
+    <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results">
+        <fieldset >
+            <legend>Name Information:</legend>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName"><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="firstName" name="lastName">
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information: </legend>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"><br>
+            <label for="telephone">Phone:</label>
+            <input type="tel" name="telephone" id="telephone">
+        </fieldset>
+        <fieldset>
+            <legend>Birthday:</legend>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+    <iframe name="cgi-results" id="cgi-results"/>
 </body>
 </html>
